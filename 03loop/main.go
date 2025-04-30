@@ -17,4 +17,19 @@ func main() {
 		fmt.Print(i, " ")
 
 	}
+	likeWhile()
+}
+
+func likeWhile() {
+	fmt.Println()
+
+	i := 10
+
+	for {
+		if i < 0 {
+			break
+		}
+
+		fmt.Print(i, " ")
+	}
 }

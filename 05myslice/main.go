@@ -33,4 +33,15 @@ func main() {
 	sort.Ints(highScores)
 	fmt.Println(highScores)
 
+	//Removing the value from slices based on index
+
+	var courses = []string{"reactjs", "javascript", "swift", "python"}
+
+	fmt.Println(courses)
+
+	var index int = 2
+	//In this section, the slice courses initially contains 4 elements. The goal is to remove the element at index 2 ("swift"). By using the append function to concatenate the slice before and after the element to be removed, it effectively removes "swift" from the courses slice.
+	courses = append(courses[:index], courses[index+1:]...)
+	fmt.Println(courses)
+
 }

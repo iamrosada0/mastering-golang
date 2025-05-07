@@ -16,4 +16,6 @@ func main() {
 
 	fmt.Println(hitesh)
 	fmt.Printf("hitesh details are: %+v\n", hitesh)
+	fmt.Printf("Name is %v and email: %v", hitesh.Name, hitesh.Email)
+
 }

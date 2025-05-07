@@ -21,4 +21,10 @@ func main() {
 	delete(languages, "rb")
 	fmt.Println("List of all language after deleted", languages)
 
+	//loops are interesting in golang
+
+	for key, value := range languages {
+		fmt.Printf("For key %v, value is %v\n", key, value)
+	}
+
 }

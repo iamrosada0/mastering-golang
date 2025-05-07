@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	fmt.Println("Welcome to video on slices")
@@ -22,7 +25,12 @@ func main() {
 	highScores[1] = 231
 	highScores[2] = 233
 	highScores[3] = 234
+	//highScores[4] = 934
+	highScores = append(highScores, 555, 566, 455)
 
+	fmt.Println(highScores)
+
+	sort.Ints(highScores)
 	fmt.Println(highScores)
 
 }

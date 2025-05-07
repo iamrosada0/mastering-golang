@@ -11,4 +11,18 @@ func main() {
 	// Adding items
 	fruitList = append(fruitList, "Mango", "Banana")
 	fmt.Println(fruitList)
+
+	fruitList = append(fruitList[:3])
+
+	fmt.Println(fruitList)
+
+	highScores := make([]int, 4)
+
+	highScores[0] = 232
+	highScores[1] = 231
+	highScores[2] = 233
+	highScores[3] = 234
+
+	fmt.Println(highScores)
+
 }
